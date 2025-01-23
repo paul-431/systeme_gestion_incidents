@@ -57,19 +57,13 @@ Accédez au répertoire :
 cd systeme_gestion_incidents
 
 Installez les dépendances :
-```bash
+
 npm install  # ou pip install -r requirements.txt selon la technologie utilisée
 Configurez les variables d'environnement nécessaires dans un fichier .env.
-bash
+
 Lancez l'application :
-```bash
 npm start  # ou python app.py selon la technologie utilisée
 
 
-Contribution
-Les contributions sont les bienvenues ! Vous pouvez soumettre des problèmes, des demandes de fonctionnalités ou des pull requests. Veuillez consulter le fichier CONTRIBUTING.md pour plus de détails.
-
-Contact
-Pour toute question, veuillez contacter [].
 
 
