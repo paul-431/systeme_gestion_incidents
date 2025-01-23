@@ -52,20 +52,14 @@ Pour installer le système, veuillez suivre les étapes ci-dessous :
    ```bash
    git clone https://github.com/votre-utilisateur/systeme_gestion_incidents.git
 Accédez au répertoire :
-   bash
-
-
 cd systeme_gestion_incidents
+
 Installez les dépendances :
-
-   ```bash
-
 
 npm install  # ou pip install -r requirements.txt selon la technologie utilisée
 Configurez les variables d'environnement nécessaires dans un fichier .env.
-Lancez l'application :
-bash
 
+Lancez l'application :
 
 npm start  # ou python app.py selon la technologie utilisée
 Contribution
