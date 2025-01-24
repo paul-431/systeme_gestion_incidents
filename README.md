@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+=======
+# systeme_gestion_incidents
+projet développé dans le cadre de la resolution des problemes qui surviennent sur un reseau de telecommunication
+
+>>>>>>> 401ccc95acf8fcd1c73ba9f56a010de2ae25b5ec
 # Système de Gestion des Incidents
 
 ## Introduction
@@ -47,4 +53,24 @@ Pour installer le système, veuillez suivre les étapes ci-dessous :
 
 1. Clonez le référentiel :
    ```bash
+<<<<<<< HEAD
    git clone https://github.com/votre-utilisateur/nom-du-repo.git
+=======
+   git clone https://github.com/votre-utilisateur/systeme_gestion_incidents.git
+   
+Accédez au répertoire :
+```bash
+cd systeme_gestion_incidents
+
+Installez les dépendances :
+
+npm install  # ou pip install -r requirements.txt selon la technologie utilisée
+Configurez les variables d'environnement nécessaires dans un fichier .env.
+
+Lancez l'application :
+npm start  # ou python app.py selon la technologie utilisée
+
+
+
+
+>>>>>>> 401ccc95acf8fcd1c73ba9f56a010de2ae25b5ec
