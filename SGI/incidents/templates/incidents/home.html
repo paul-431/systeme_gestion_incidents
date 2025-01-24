@@ -1,0 +1,28 @@
+<!-- incidents/templates/incidents/home.html -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Accueil</title>
+</head>
+<body>
+    <header>
+        <h1>Bienvenue sur le Système de Gestion des Incidents</h1>
+        <nav>
+            <a href="{% url 'home' %}">Accueil</a>
+            <a href="{% url 'report_incident' %}">Signaler un Incident</a>
+            <a href="{% url 'list_incidents' %}">Suivi des Incidents</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <p>Nous sommes ici pour vous aider!</p>
+        <a href="{% url 'report_incident' %}">Signaler un Incident</a>
+        <a href="{% url 'list_incidents' %}">Consulter mes Incidents</a>
+    </main>
+    <footer>
+        <p>Contact : info@exemple.com</p>
+        <p>Suivez-nous sur les réseaux sociaux</p>
+    </footer>
+</body>
+</html>

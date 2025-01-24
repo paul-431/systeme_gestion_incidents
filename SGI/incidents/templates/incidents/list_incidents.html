@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>liste des incidents</title>
+</head>
+<body>
+    <header>
+        <h1> LISTE DE INCIDENTS</h1>
+        <nav> 
+            <a href="{% url 'home'%}">Accueil</a>
+            <a href="{% url 'report_incident'%}">signaler un imcident</a>
+            <a href="{% url 'list_incidents'%}">suivi des incidents </a>
+            
+        </nav>
+    </header>
+    <main>
+        <table>
+            <tr>
+
+                <th> ID</th>
+                <th>Description</th>
+                <th>Statut</th>
+                <th>Date de Signalement</th>
+                
+            </tr>
+            {% for incident in incidents %}
+            <tr>
+                <td>{{incident.id}}</td>
+                <td>{{incident.description}}</td>
+                <td>{{incident.statut}}</td>
+                <td>{{incident.created_at}}</td>
+
+            </tr>
+            {%endfor%}
+        </table>
+    </main>
+    
+</body>
+</html>

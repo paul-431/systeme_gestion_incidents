@@ -1,0 +1,40 @@
+<!-- incidents/templates/incidents/admin_dashboard.html -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Tableau de Bord Administrateur</title>
+</head>
+<body>
+    <header>
+        <h1>Tableau de Bord Administrateur</h1>
+        <nav>
+            <a href="{% url 'admin_dashboard' %}">Tableau de Bord</a>
+            <a href="{% url 'list_incidents' %}">Voir tous les Incidents</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Incidents Signalés</h2>
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Description</th>
+                <th>Localisation</th>
+                <th>Urgence</th>
+                <th>Statut</th>
+                <th>Date de Signalement</th>
+            </tr>
+            {% for incident in incidents %}
+            <tr>
+                <td>{{ incident.id }}</td>
+                <td>{{ incident.description }}</td>
+                <td>{{ incident.location }}</td>
+                <td>{{ incident.urgency }}</td>
+                <td>{{ incident.status }}</td>
+                <td>{{ incident.created_at }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </main>
+</body>
+</html>

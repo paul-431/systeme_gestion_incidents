@@ -1,0 +1,29 @@
+<!-- incidents/templates/incidents/report_incident.html -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Signaler un Incident</title>
+</head>
+<body>
+    <header>
+        <h1>Signaler un Incident</h1>
+        <nav>
+            <a href="{% url 'home' %}">Accueil</a>
+            <a href="{% url 'report_incident' %}">Signaler un Incident</a>
+            <a href="{% url 'list_incidents' %}">Suivi des Incidents</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}  <!-- Affiche le formulaire -->
+            <button type="submit">Soumettre</button>
+        </form>
+        {% if form.non_field_errors %}
+            <div style="color: red;">{{ form.non_field_errors }}</div>  <!-- Affiche les erreurs de l'API -->
+        {% endif %}
+    </main>
+</body>
+</html>
